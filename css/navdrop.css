@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.dropdown-content table tr td{
+	background-color: rgba(142,142,142,0.08);
+}
+.dropdown-content table tr td a{
+	font-size: 14px;
+	color:red;
+	background-color: rgba(142,142,142,0.08);
+}
+.dropdown-content table tr td:hover{
+	background-color: rgba(142,142,142,0.5);
+}
+.dropdown {
+ 	position: relative;
+  	display: inline-block;
+}
+
+.dropdown-content {
+	width: 465px;
+	display: none;
+	margin-top: 10px;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	padding: 12px 16px;
+  	z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+aside#left, aside#right{
+	display: table-cell;
+	vertical-align: top;
+}
+aside#left{
+	width: 300px;
+}
+aside#right{
+	width: 900px;
+	margin: 0px auto;
+}
+aside#left ul li a{
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
+aside#left ul li a:hover{
+	color: blue;
+}
+aside#left ul li{
+	padding-top:15px;
+	list-style: none;
+}
+#khachsanleft, #khachsanright{
+	display: table-cell;
+	vertical-align: top;
+}
+#khachsanleft{
+	width: 600px;
+}
+#khachsanleft img{
+	width: 600px;
+}
+#khachsanright{
+	width: 600px;
+}
+#khachsanright p{
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px;
+}
+#datngay{
+	margin: 10px;
+	border: 1px solid;
+	width: 160px;
+	text-align: center;
+	background-color: red;
+}

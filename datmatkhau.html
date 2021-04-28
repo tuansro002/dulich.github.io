@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/navdrop.css">
+	<link rel="stylesheet" type="text/css" href="css/chuyenanh.css">
+	<link rel="stylesheet" type="text/css" href="css/Dangky.css">
+	<script language="javascript" src="script/jv.js"></script>
+	<script>
+		function check(){
+			var mk=document.getElementById("mk")
+			if(mk.value==""){
+				alert("Mật khẩu mới không được rỗng");
+				mk.focus;
+				return false;
+			}
+			var nl=document.getElementById("nl")
+			if(nl.value==""){
+				alert("Vui lòng xác nhận lại mật khẩu");
+				nl.focus;
+				return false;
+			}
+			if(mk.value!=nl.value){
+				alert("Xác nhận mật khẩu không trùng khớp");
+				return false;
+			}
+			alert("Đổi mật khẩu thành công")
+			return true;
+		}
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<div id="gioithieuweb">
+				<h5>MẠNG BÁN TOUR & DỊCH VỤ TRỰC TUYẾN HÀNG ĐẦU VIỆT NAM</h5>
+			</div>
+			<div id="giaodien">
+			  <a href="Dangnhap.html">
+					<img src="images/loginicon.png" width="30px">
+					<b>Đăng nhập</b>
+				</a>
+			</div>
+			<div id="logo">
+			  <img src="images/logo.png">
+			</div>
+			<div id="lienhe">
+				<img src="images/phoneicon.png" width=50px align=left>
+				<a href="tel:0912685449" style="text-decoration: none; color: black;">
+					<b>Hotline</b>
+					<b>0912685449</b>
+				</a>
+			</div>
+		  <div id="timkiem">
+				<input type="text" size="50" placeholder="Tìm kiếm...">
+								<a href="#"><img src="images/findicon.png" width=20px></a>
+			</div>
+		</header>
+		<nav>
+			<div id="subnav">
+				<ul>
+					<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+					<li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+					<li class="dropdown">
+							<a href="Dulichtrongnuoc.html">
+								DU LỊCH TRONG NƯỚC
+								<img src="images/angle-arrow-down.png" width=10px style="margin-left: 5px;">
+							</a>
+							<div class="dropdown-content">
+								<img src="images/angle-arrow-down.png" width=20px style="margin-left: 5px;">
+								<b style="position: relative; bottom:4px; color: blue;">&nbsp;DU LỊCH TRONG NƯỚC</b>
+								<table>
+									<tr>
+										<td style="font-weight: bold;width: 140px;"><a href="Dulichmienbac.html">DU LỊCH MIỀN BẮC</a></td>
+										<td style="font-weight: bold;width: 160px;"><a href="Dulichmientrung.html">DU LỊCH MIỀN TRUNG</a></td>
+										<td style="font-weight: bold;width: 140px;"><a href="Dulichmiennam.html">DU LỊCH MIỀN NAM</a></td>
+									</tr>
+									<tr>
+										<td><a href="hanoi.html" style="color: black">Hà Nội</a></td>
+										<td><a href="danang.html" style="color: black">Đà Nẵng</a></td>
+										<td><a href="condao.html" style="color: black">Côn Đảo</a></td>
+									</tr>
+									<tr>
+										<td><a href="sapa.html" style="color: black">Sapa</a></td>
+										<td><a href="phuyen.html" style="color: black">Phú Yên</a></td>
+										<td><a href="phuquoc.html" style="color: black">Phú Quốc</a></td>
+									</tr>
+									<tr>
+										<td><a href="halonh.html" style="color: black">Hạ Long</a></td>
+										<td style="background-color: white;"></td>
+										<td style="background-color: white;"></td>
+									</tr>
+								</table>
+							</div>
+					</li>
+					<li><a href="Khachsan.html">KHÁCH SẠN</a></li>
+					<li><a href="Tintuc.html">TIN TỨC</a></li>
+					<li><a href="Lienhe.html">LIÊN HỆ</a></li>
+				</ul>
+			</div>
+		</nav>
+		<br>
+		<div id="trangdangnhap">
+			<form onSubmit="return check();" action="Dangnhap.html" style="width: 410px; margin: 0px auto; border: 1px solid; padding-left: 10px;">
+				<hr style="opacity: 0.3; margin: 30px 0px 20px -10px;">
+				<table>
+					<tr>
+						<td style="font-weight: bold; font-size: 20px; font-family: Arial; padding-left: 10px; padding-bottom: 10px" colspan="2">ĐẶT LẠI MẬT KHẨU</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold; padding-bottom: 5px;">Mật khẩu mới *</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom: 20px;" colspan="2"><input style="height: 25px; padding-left: 10px;" size="55" id="mk" type="password"></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold; padding-bottom: 5px;">Nhập lại mật khẩu *</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom: 20px;" colspan="2"><input style="height: 25px; padding-left: 10px;" size="55" id="nl" type="password"></td>
+					</tr>
+					<tr>
+						<td style="width: 140px; padding-bottom: 10px; text-align: center;" colspan="2"><input type="submit" value="XÁC NHẬN ĐỔI MẬT KHẨU"></td>
+					</tr>
+				</table>
+				<hr style="opacity: 0.4; margin-bottom: 20px; margin-left: -10px">
+			</form>
+			<br>
+		</div>
+	</div>
+</body>

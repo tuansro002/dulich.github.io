@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+#trangdangnhap{
+	background-color: rgba(165,165,165,0.2);
+}
+#trangdangnhap form{
+	background-color: antiquewhite;
+}
+#behindgd td a:hover{
+	color: blue;
+	opacity: 0.5;
+}
+input[type=submit]{
+	padding: 7px 20px 7px 20px;
+	background-color:rgba(18,36,233,0.8);
+	font-size: 15px;
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-family: Arial;
+}
